@@ -1,0 +1,46 @@
+.country-flags__iceland {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background: darkblue;
+}
+
+.country-flags__iceland-vertical {
+  position: absolute;
+  top: 0;
+  left: 90px;
+  height: 100%;
+  width: 50px;
+  background-color: white;
+
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    content: '';
+    height: 100%;
+    width: 20px;
+    background-color: red;
+    z-index: 10;
+  }
+}
+
+.country-flags__iceland-horizontal {
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  background-color: white;
+
+  &:after {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    content: '';
+    height: 20px;
+    width: 100%;
+    background-color: red;
+    z-index: 10;
+  }
+}
